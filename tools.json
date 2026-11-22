@@ -1,0 +1,23 @@
+[
+  {
+    "name": "enso_oni",
+    "description": "Oceanic Nino Index (ONI), the standard measure of El Nino / La Nina, from NOAA Climate Prediction Center. Returns 3-month seasons (DJF..NDJ) with the Nino 3.4 sea-surface temperature, the anomaly in deg C, and the state the publisher's +/-0.5 C threshold implies (El Nino / La Nina / Neutral) with a strength band. Default: the latest 12 seasons, newest last. Use latest for \"current ENSO state\", or from_year/to_year for history (1950 onward).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "latest": {
+          "type": "number",
+          "description": "Return the most recent N seasons (default 12, max 200). Ignored when from_year or to_year is set."
+        },
+        "from_year": {
+          "type": "number",
+          "description": "First year, 1950 or later"
+        },
+        "to_year": {
+          "type": "number",
+          "description": "Last year"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "name": "@pipeworx/mcp-noaa-enso",
+  "version": "0.1.0",
+  "description": "NOAA ENSO pack: Oceanic Nino Index (ONI) from the NOAA Climate Prediction Center.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "mcp-noaa-enso": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "noaa-enso"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-noaa-enso.git"
+  },
+  "mcpName": "io.github.pipeworx-io/noaa-enso",
+  "pipeworx": {
+    "mode": "gateway",
+    "slug": "noaa-enso",
+    "gatewaySlug": "noaa-enso",
+    "sourceHash": "v1-c54a64e32229a5a8dccb68260c74b262b0a0a4c92db7b32ac07946d239b474c3",
+    "sourceCommit": "06cab3af0fa5a65a398f12db1e5f09892c0d0c25"
+  }
+}
